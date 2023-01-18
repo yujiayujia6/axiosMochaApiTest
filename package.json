@@ -1,0 +1,33 @@
+{
+  "name": "westpac-one-mobile-microservice-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf mochawesome-report/",
+    "test": "yarn run clean && mocha --timeout 10000 --reporter mochawesome --reporter-options enableCode=false"
+  },
+  "author": "Jia Yu",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  },
+  "dependencies": {
+    "@fakerjs/faker": "^3.0.0",
+    "axios": "^1.1.3",
+    "chai": "^4.3.6",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^10.1.0",
+    "mochawesome": "^7.1.3",
+    "properties-reader": "^2.2.0",
+    "rimraf": "^3.0.2"
+  }
+}
